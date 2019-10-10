@@ -930,8 +930,7 @@ MonoBehaviour:
   typingSpeed: 0.05
   scene: BrainScene
   sentences:
-  - Entao... todos passamos por situacoes complicadas durante nossas vidas. Muitas
-    vezes essas situacoes parecem nao ter fim...
+  - Oi
   continueButton: {fileID: 1080166998}
 --- !u!4 &370341273
 Transform:
