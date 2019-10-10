@@ -17,4 +17,9 @@ public class CorrectAnswers : MonoBehaviour
     {
         objective.fontStyle = FontStyles.Strikethrough;
     }
+
+    public void DisableButton()
+    {
+        GetComponent<Button>().interactable = false;
+    }
 }
