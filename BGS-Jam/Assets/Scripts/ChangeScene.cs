@@ -13,6 +13,14 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void CheckWin()
+    {
+        if (PlayerPrefs.GetInt("Family") == 1 && PlayerPrefs.GetInt("Social") == 1 && PlayerPrefs.GetInt("Future") == 1)
+        {
+            SceneManager.LoadScene("TextEndingScene");
+        }
+    }
+
     public void PlaySound()
     {
         audioSrc.GetComponent<AudioManagerScript>().PlayCompletedSound();

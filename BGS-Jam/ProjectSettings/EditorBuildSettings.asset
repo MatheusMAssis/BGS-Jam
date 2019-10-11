@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TextEndingScene.unity
     guid: fc1f8b800ce6376488191e31be92babd
+  - enabled: 1
+    path: Assets/Scenes/LastScene.unity
+    guid: 15324745d199ac2458525908bc95e4a2
   m_configObjects: {}

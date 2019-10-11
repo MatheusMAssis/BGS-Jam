@@ -12,6 +12,8 @@ public class Dialog : MonoBehaviour
     private int index;
     public float typingSpeed;
 
+    public Image fade;
+
     public string scene;
 
     [TextArea]
@@ -54,7 +56,8 @@ public class Dialog : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(scene);
+            //SceneManager.LoadScene(scene);
+            fade.gameObject.SetActive(true);
             textDisplay.text = "";
             continueButton.SetActive(false);
         }

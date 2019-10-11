@@ -28,29 +28,28 @@ public class ScoreScene : MonoBehaviour
         if (pP == "Family")
         {
             PlayerPrefs.SetString("NomeMensagem","Mae");
-            PlayerPrefs.SetString("TextoMensagem", "Oi, filho sabe que eu te amo nao importa o que aconteça.");
+            PlayerPrefs.SetString("TextoMensagem", "Oi, filho! Saiba que eu te amo nao importa o que aconteca!!");
         }
         else if (pP == "Social")
         {
-            PlayerPrefs.SetString("NomeMensagem", "Turma de 2001");
-            PlayerPrefs.SetString("TextoMensagem", "Alo, sentimos sua falta, quando vamos nos ver de novo?");
+            PlayerPrefs.SetString("NomeMensagem", "[GRUPO] Turma de 2001");
+            PlayerPrefs.SetString("TextoMensagem", "Alo!! Sentimos sua falta :( Quando vamos nos ver de novo?");
         }
         else if (pP == "Future")
         {
             PlayerPrefs.SetString("NomeMensagem", "Filho");
-            PlayerPrefs.SetString("TextoMensagem", "Voce é tudo e mais um pouco que poderia pedir");
+            PlayerPrefs.SetString("TextoMensagem", "Voce e tudo e muito mais pra mim! O melhor pai do mundo!!");
         }
     }
 
     void Update()
     {
         TesteScene();
-      
+
         if (score == maxScore)
         {
             PlayerPrefs.SetInt(pP, 1);
             popUp.gameObject.SetActive(true);
-
         }
     }
 }
