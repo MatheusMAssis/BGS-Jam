@@ -7,10 +7,11 @@ public class ResetAll : MonoBehaviour
 {
     public string scene;
     public GameObject popUp;
+    GameObject audioSrc;
 
     void Start()
     {
-        
+        audioSrc = GameObject.FindGameObjectWithTag("AudioSrc");
     }
 
     public void showPopUp()
@@ -27,7 +28,7 @@ public class ResetAll : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(scene);
-
+        Destroy(audioSrc);
     }
 
     // Update is called once per frame

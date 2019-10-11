@@ -44,6 +44,8 @@ public class Dialog : MonoBehaviour
 
     public void NextSentence()
     {
+        continueButton.SetActive(false);
+
         if (index < sentences.Length - 1)
         {
             index++;
@@ -53,6 +55,8 @@ public class Dialog : MonoBehaviour
         else
         {
             SceneManager.LoadScene(scene);
+            textDisplay.text = "";
+            continueButton.SetActive(false);
         }
     }
 

@@ -1,20 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+public class AppTransition : MonoBehaviour
 {
     public string scene;
-    public AudioSource audioSrc;
+    public Image img;
 
-    public void ChangeSceneTo()
+    public void ChangeScene()
     {
         SceneManager.LoadScene(scene);
     }
 
-    public void PlaySound()
+    public void OpenImageApp()
     {
-        audioSrc.GetComponent<AudioManagerScript>().PlayCompletedSound();
+        img.gameObject.SetActive(true);
     }
 }

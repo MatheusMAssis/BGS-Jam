@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class CheckButtons : MonoBehaviour
 {
@@ -13,10 +14,21 @@ public class CheckButtons : MonoBehaviour
     public Image familyIm;
     public Image socialIm;
     public Image futureIm;
+    public GameObject notification;
+    public TextMeshProUGUI nomeTexto;
+    public TextMeshProUGUI mensagemTexto;
 
     private void Start()
     {
+        nomeTexto = nomeTexto.GetComponent<TextMeshProUGUI>();
+        mensagemTexto = mensagemTexto.GetComponent<TextMeshProUGUI>();
 
+        if (PlayerPrefs.GetInt("IfVisited") == 1)
+        {
+            nomeTexto.text = PlayerPrefs.GetString("NomeMensagem");
+            mensagemTexto.text = PlayerPrefs.GetString("TextoMensagem");
+            notification.SetActive(true);
+        }
     }
 
     public void DisableButton()
@@ -50,6 +62,7 @@ public class CheckButtons : MonoBehaviour
 
     void Update()
     {
+       
         CheckWin();
         DisableButton();
     }
