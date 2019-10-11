@@ -11,6 +11,15 @@ public class ChangeScene : MonoBehaviour
     public void ChangeSceneTo()
     {
         SceneManager.LoadScene(scene);
+        EliminateDoubleSound();
+    }
+
+    public void EliminateDoubleSound()
+    {
+        if (scene == "MenuScene")
+        {
+            Destroy(GameObject.FindGameObjectWithTag("AudioSrc"));
+        }
     }
 
     public void CheckWin()
@@ -20,6 +29,7 @@ public class ChangeScene : MonoBehaviour
             SceneManager.LoadScene("TextEndingScene");
         }
     }
+
 
     public void PlaySound()
     {

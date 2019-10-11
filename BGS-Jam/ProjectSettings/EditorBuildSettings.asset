@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LastScene.unity
     guid: 15324745d199ac2458525908bc95e4a2
+  - enabled: 1
+    path: Assets/Scenes/EXTRATelephoneScene.unity
+    guid: a20682089dff2294da8aa478abf4e955
+  - enabled: 1
+    path: Assets/Scenes/EXTRAEmailScene.unity
+    guid: 68980fc88de31da4d845459bea366be6
+  - enabled: 1
+    path: Assets/Scenes/EXTRASongScene.unity
+    guid: 56559111a67f0ac499a67c1de5840850
   m_configObjects: {}
