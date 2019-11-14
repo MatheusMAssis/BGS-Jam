@@ -1,5 +1,7 @@
 # BGS Jam
 
+![Game Cover](link-to-image)
+
 Repository created for the Brasil Game Show Game Jam, that occurred from October 9th to 11th. There was no theme for the Jam, but all the team had to create a Seek 'n Find game. Our game, "Suas Emoções", was created in 48 hours.
 
 ## Getting Started
