@@ -6,7 +6,7 @@ Repository created for the Brasil Game Show Game Jam, that occurred from October
 
 ## Getting Started
 
-If you download this repository, you can access our project from your Unity
+If you download this repository, you can access our project from your Unity.
 
 ### Prerequisites
 
@@ -20,4 +20,4 @@ Unity 2018.3.14
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
